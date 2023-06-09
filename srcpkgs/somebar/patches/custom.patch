@@ -1,0 +1,36 @@
+diff -N1p -r somebar-1.0.3/src/config.def.hpp custom-bar/src/config.def.hpp
+*** somebar-1.0.3/src/config.def.hpp	2023-06-07 08:59:38.646601019 -0400
+--- custom-bar/src/config.def.hpp	2023-06-07 09:02:46.514394786 -0400
+***************
+*** 6,8 ****
+  
+! constexpr bool topbar = true;
+  
+--- 6,8 ----
+  
+! constexpr bool topbar = false;
+  
+*************** constexpr int paddingY = 3;
+*** 12,17 ****
+  // See https://docs.gtk.org/Pango/type_func.FontDescription.from_string.html
+! constexpr const char* font = "Sans 12";
+  
+! constexpr ColorScheme colorInactive = {Color(0xbb, 0xbb, 0xbb), Color(0x22, 0x22, 0x22)};
+! constexpr ColorScheme colorActive = {Color(0xee, 0xee, 0xee), Color(0x00, 0x55, 0x77)};
+  constexpr const char* termcmd[] = {"foot", nullptr};
+--- 12,17 ----
+  // See https://docs.gtk.org/Pango/type_func.FontDescription.from_string.html
+! constexpr const char* font = "Hack 11";
+  
+! constexpr ColorScheme colorInactive = {Color(0xbb, 0xbb, 0xbb), Color(0x29, 0x29, 0x36)};
+! constexpr ColorScheme colorActive = {Color(0xee, 0xee, 0xee), Color(0x3d, 0x2b, 0x63)};
+  constexpr const char* termcmd[] = {"foot", nullptr};
+*************** static std::vector<std::string> tagNames
+*** 25,27 ****
+  constexpr Button buttons[] = {
+! 	{ ClkStatusText,   BTN_RIGHT,  spawn,      {.v = termcmd} },
+  };
+--- 25,27 ----
+  constexpr Button buttons[] = {
+! //	{ ClkStatusText,   BTN_RIGHT,  spawn,      {.v = termcmd} },
+  };
