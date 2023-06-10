@@ -1,0 +1,34 @@
+# Template file for 'somebar'
+pkgname=someblocks
+version=1.0.1
+revision=1
+#archs="i686 x86_64"
+#build_wrksrc=
+build_style=gnu-makefile
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+hostmakedepends="pkg-config cmake wayland-protocols wayland-devel"
+makedepends="cairo-devel pango-devel"
+#depends=""
+short_desc="Modular status bar for somebar written in c."
+maintainer="lz-coder <lzcoder@proton.me>"
+license="MIT"
+homepage="https://git.sr.ht/~raphi/someblocks"
+#changelog=""
+distfiles="https://git.sr.ht/~raphi/${pkgname}/archive/${version}.tar.gz"
+checksum=dbabd88e7cd91b430eece80adbc9876db39b38a5dc080e18795621fa5ec68fb2
+
+pre_build() {
+	if [ -e ${FILESDIR} ]; then
+		[ -e ${FILESDIR}/blocks.h ] && cp ${FILESDIR}/blocks.h blocks.h
+	else
+		cp blocks.def.h blocks.h
+	fi
+}
+
+post_install() {
+	vlicense LICENSE
+}
