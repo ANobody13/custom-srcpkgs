@@ -23,9 +23,9 @@ checksum=dbabd88e7cd91b430eece80adbc9876db39b38a5dc080e18795621fa5ec68fb2
 
 pre_build() {
 	if [ -e ${FILESDIR} ]; then
-		[ -e ${FILESDIR}/blocks.h ] && cp ${FILESDIR}/blocks.h src/blocks.h
+		[ -e ${FILESDIR}/blocks.h ] && cp ${FILESDIR}/blocks.h blocks.h
 	else
-		cp src/blocks.def.h src/blocks.h
+		cp blocks.def.h blocks.h
 	fi
 }
 
