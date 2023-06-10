@@ -2,10 +2,10 @@ Common subdirectories: dwl-0.4/.git and custom/.git
 Common subdirectories: dwl-0.4/.github and custom/.github
 diff -N1p dwl-0.4/config.h custom/config.h
 *** dwl-0.4/config.h	1969-12-31 19:00:00.000000000 -0500
---- custom/config.h	2023-06-09 19:06:54.697766447 -0400
+--- custom/config.h	2023-06-09 20:52:03.219600017 -0400
 ***************
 *** 0 ****
---- 1,213 ----
+--- 1,212 ----
 + /* appearance */
 + static const int sloppyfocus               = 1;  /* focus follows mouse */
 + static const int bypass_surface_visibility = 0;  /* 1 means idle inhibitors will disable idle tracking even if it's surface isn't visible  */
