@@ -28,7 +28,7 @@ diff -N1p dwl-0.4/config.h dwl-0.4/config.h
 + 	"easyeffects", NULL,
 +       "wbg", "/home/anobody/Pictures/Wallpapers/VectorCityNight.jpg", NULL,
 + 	"someblocks", NULL,
-+	"dunst". NULL,
++	"dunst", NULL,
 +       NULL /* terminate */
 + };
 + 
