@@ -1,6 +1,6 @@
-diff -N1p -r somebar-1.0.3/src/config.def.hpp custom-bar/src/config.def.hpp
+diff -N1p -r somebar-1.0.3/src/config.def.hpp somebar-1.0.3/src/config.def.hpp
 *** somebar-1.0.3/src/config.def.hpp	2023-06-07 08:59:38.646601019 -0400
---- custom-bar/src/config.def.hpp	2023-06-07 09:02:46.514394786 -0400
+--- somebar-1.0.3/src/config.def.hpp	2023-06-07 09:02:46.514394786 -0400
 ***************
 *** 6,8 ****
   
